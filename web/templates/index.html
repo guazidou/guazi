@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瓜子</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>编号</th>
+        <th>时间</th>
+        <th>内容</th>
+        <th>作者</th>
+    </tr>
+    {% for nut in nuts %}
+    <tr>
+        <td>{{ nut.id }}</td>
+        <td>{{ nut.datetime }}</td>
+        <td>{{ nut.context }}</td>
+        <td>{{ nut.author }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
